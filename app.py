@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import os
 
+#import aws_cdk.core as cdk
 from aws_cdk import core as cdk
 
 # For consistency with TypeScript code, `cdk` is the preferred import name for
@@ -21,7 +22,7 @@ CdkTrainerStack(app, "CdkTrainerStack",
     # Uncomment the next line to specialize this stack for the AWS Account
     # and Region that are implied by the current CLI configuration.
 
-    #env=core.Environment(account=os.getenv('CDK_DEFAULT_ACCOUNT'), region=os.getenv('CDK_DEFAULT_REGION')),
+    env=core.Environment(account=os.getenv('CDK_DEFAULT_ACCOUNT'), region=os.getenv('CDK_DEFAULT_REGION')),
 
     # Uncomment the next line if you know exactly what Account and Region you
     # want to deploy the stack to. */
